@@ -1,1 +1,21 @@
-.DS_Store
+# .gitignore
+
+# Python
+*.py[oc]
+__pycache__/
+*.egg-info
+.eggs/
+.mypy_cache/*
+.pyre/
+.pytest_cache/
+.ruff_cache/
+.dmypy.json
+
+# Databases
+*.db
+
+# Build artifacts
+build/
+dist/
+*.so
+out*/
