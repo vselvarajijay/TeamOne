@@ -7,7 +7,7 @@ import traceback
 
 # Third-party imports
 import colorlogging
-import pykos
+import pykos  # type: ignore[import-untyped]
 
 # Local imports
 from skillet.setup.maps import ACTUATOR_NAME_TO_ID
