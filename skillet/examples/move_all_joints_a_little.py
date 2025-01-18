@@ -43,8 +43,8 @@ def main() -> None:
 
     # Log summary
     if failed_joints:
-        logger.info("\n=== Failed Joints ===")
-        logger.info("Failed to move %d joints: %s", len(failed_joints), ", ".join(failed_joints))
+        logger.error("\n=== Failed Joints ===")
+        logger.error("Failed to move %d joints: %s", len(failed_joints), ", ".join(failed_joints))
 
 
 if __name__ == "__main__":
