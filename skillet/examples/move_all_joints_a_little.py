@@ -43,7 +43,7 @@ def main() -> None:
 
     # Log summary
     if failed_joints:
-        logger.error("\n=== Failed Joints ===")
+        logger.error("=== Failed Joints ===")
         logger.error("Failed to move %d joints: %s", len(failed_joints), ", ".join(failed_joints))
 
 
