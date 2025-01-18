@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "agent"
+version = "0.1.0"
+description = ""
+authors = ["Vijay Selvaraj <vijay.selvaraj@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+langgraph = "^0.2.64"
+langchain = "^0.3.14"
+langchain-openai = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
