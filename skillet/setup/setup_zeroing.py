@@ -28,7 +28,6 @@ def main() -> None:
             result = kos.actuator.configure_actuator(actuator_id=actuator_id, zero_position=True)
             logger.info("Result for actuator %s with id %d: %s", actuator_name, actuator_id, result)
 
-            breakpoint()
             # Get and log actuator state
             state = kos.actuator.get_actuators_state([actuator_id])
             logger.info("Current state for actuator %s with id %d: %s", actuator_name, actuator_id, state)
