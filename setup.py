@@ -29,7 +29,7 @@ setup(
     version=version,
     description="A getting started toolkit for Zeroth V2",
     author="KScaleLabs",
-    url="https://github.com/kscalelabs",
+    url="https://github.com/kscalelabs/skillet",
     long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires=">=3.11",
