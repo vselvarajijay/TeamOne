@@ -15,8 +15,8 @@ import pykos  # type: ignore[import-untyped]
 from skillet.setup.maps import ACTUATOR_NAME_TO_ID
 
 # Constants
-JOINT_NAME = "right_ankle_pitch"
-MOVE_DEGREES = 20.0  # Could be 10 or -20 or whatever you want
+JOINT_NAME = "right_gripper"
+MOVE_DEGREES = 35.0  # Could be 10 or -20 or whatever you want
 
 
 def configure_joint(kos: pykos.KOS, joint_name: str) -> None:
@@ -66,14 +66,12 @@ def move_joint(kos: pykos.KOS, joint_name: str, position: float) -> None:
     logging.info("Movement result: %s", result)
 
 
-def main() -> None:
-    """Main function to interact with actuators.
+def move_joint_a_little(joint_name: str, move_degrees: float) -> None:
+    """Move a joint by a specified number of degrees from its current position.
 
-    1. Configure the joint.
-    2. Get the current joint state.
-    3. Calculate a target position.
-    4. Move the joint.
-    5. Retrieve and log the new state.
+    Args:
+        joint_name (str): Name of the joint to move.
+        move_degrees (float): Number of degrees to move (positive or negative).
     """
     # Configure logging
     logging.basicConfig(level=logging.INFO)
@@ -83,21 +81,26 @@ def main() -> None:
     kos = pykos.KOS(ip="192.168.42.1")
 
     # Configure and log initial state
-    configure_joint(kos, JOINT_NAME)
-    get_joint_state(kos, JOINT_NAME)
+    configure_joint(kos, joint_name)
+    get_joint_state(kos, joint_name)
 
     # Read current position
-    actuator_id = ACTUATOR_NAME_TO_ID[JOINT_NAME]
+    actuator_id = ACTUATOR_NAME_TO_ID[joint_name]
     state = kos.actuator.get_actuators_state([actuator_id])
     current_position = state.states[0].position
 
     # Determine target position
-    target_position = current_position - MOVE_DEGREES
+    target_position = current_position - move_degrees
 
     # Move joint and log new state
-    move_joint(kos, JOINT_NAME, target_position)
+    move_joint(kos, joint_name, target_position)
     time.sleep(0.1)  # Wait a moment to ensure movement completes
-    get_joint_state(kos, JOINT_NAME)
+    get_joint_state(kos, joint_name)
+
+
+def main() -> None:
+    """Main function to move a joint by a small amount."""
+    move_joint_a_little(JOINT_NAME, MOVE_DEGREES)
 
 
 if __name__ == "__main__":
