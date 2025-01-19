@@ -37,6 +37,7 @@ def configure_actuator(kos: pykos.KOS, actuator_id: int) -> bool:
 def move_to_position(kos: pykos.KOS, position_dict: dict) -> list[str]:
     """Move all joints to specified positions and return list of failed joints."""
     failed_joints = []
+    commands = []
     
     for joint_name, joint_data in position_dict.items():
         try:
@@ -48,20 +49,40 @@ def move_to_position(kos: pykos.KOS, position_dict: dict) -> list[str]:
                 failed_joints.append(joint_name)
                 continue
                 
-            # Command the position
-            command = {"actuator_id": actuator_id, "position": target_position}
-            result = kos.actuator.command_actuators([command])
-            
-            if not result.results[0].success:
-                failed_joints.append(joint_name)
-                logger.error(f"Failed to move joint {joint_name}")
-            else:
-                logger.info(f"Successfully moved joint {joint_name} to position {target_position}")
+            # Add command to batch
+            commands.append({
+                "actuator_id": actuator_id,
+                "position": target_position
+            })
                 
         except Exception as e:
-            logger.error(f"Error moving joint {joint_name}: {str(e)}")
+            logger.error(f"Error preparing joint {joint_name}: {str(e)}")
             logger.error(f"Traceback:\n{traceback.format_exc()}")
             failed_joints.append(joint_name)
+    
+    # Execute all commands at once if we have any valid commands
+    if commands:
+        try:
+            result = kos.actuator.command_actuators(commands)
+            
+            # Check results and log failures
+            for i, command_result in enumerate(result.results):
+                if not command_result.success:
+                    joint_name = next(name for name, data in position_dict.items() 
+                                    if data["id"] == commands[i]["actuator_id"])
+                    failed_joints.append(joint_name)
+                    logger.error(f"Failed to move joint {joint_name}")
+                else:
+                    joint_name = next(name for name, data in position_dict.items() 
+                                    if data["id"] == commands[i]["actuator_id"])
+                    logger.info(f"Successfully moved joint {joint_name} to position {commands[i]['position']}")
+                    
+        except Exception as e:
+            logger.error(f"Error executing batch movement: {str(e)}")
+            logger.error(f"Traceback:\n{traceback.format_exc()}")
+            # If batch fails, consider all remaining joints as failed
+            failed_joints.extend(name for name in position_dict.keys() 
+                               if name not in failed_joints)
             
     return failed_joints
 
@@ -97,7 +118,6 @@ def main() -> None:
             if i < len(squat_sequence) - 1:  # Don't wait after last position
                 logger.info("Waiting 2 seconds before next position...")
                 time.sleep(2)
-            break
                 
     except FileNotFoundError:
         logger.error("squat_positions.json not found!")
