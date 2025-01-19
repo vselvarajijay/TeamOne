@@ -23,7 +23,7 @@ def configure_actuator(kos: pykos.KOS, actuator_id: int) -> bool:
     try:
         result = kos.actuator.configure_actuator(
             actuator_id=actuator_id,
-            kp=36.0,  # Proportional gain
+            kp=20.0,  # Proportional gain
             kd=32.0,  # Derivative gain
             ki=32.0,  # Integral gain
             max_torque=100.0,  # Maximum torque limit
@@ -96,7 +96,7 @@ def main() -> None:
     
     try:
         # Load squat positions
-        with open("pushup.json", "r") as f:
+        with open("burpee.json", "r") as f:
             squat_sequence = json.load(f)
             
         kos = pykos.KOS(ip="192.168.42.1")

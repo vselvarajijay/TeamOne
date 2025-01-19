@@ -1,5 +1,4 @@
-[
-  {
+{
     "left_shoulder_yaw": {
       "id": 11,
       "position": -9.32,
@@ -91,4 +90,3 @@
       "torque": 0.0
     }
   }
-]

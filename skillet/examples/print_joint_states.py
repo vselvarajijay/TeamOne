@@ -26,7 +26,7 @@ def configure_joint_for_tracking(kos: pykos.KOS, joint_name: str) -> None:
         kd=32.0,  # Very low derivative gain
         ki=32.0,  # No integral gain
         max_torque=5.0,  # Low torque to allow manual movement
-        torque_enabled=True,  # Important: enable torque for position tracking
+        torque_enabled=False  # Important: enable torque for position tracking
     )
     
     if not result.success:
