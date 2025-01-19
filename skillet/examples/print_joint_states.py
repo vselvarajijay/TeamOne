@@ -22,11 +22,11 @@ def configure_joint_for_tracking(kos: pykos.KOS, joint_name: str) -> None:
     
     result = kos.actuator.configure_actuator(
         actuator_id=actuator_id,
-        kp=1.0,  # Very low proportional gain
-        kd=0.1,  # Very low derivative gain
-        ki=0.0,  # No integral gain
+        kp=32.0,  # Very low proportional gain
+        kd=32.0,  # Very low derivative gain
+        ki=32.0,  # No integral gain
         max_torque=5.0,  # Low torque to allow manual movement
-        torque_enabled=True  # Important: enable torque for position tracking
+        torque_enabled=True,  # Important: enable torque for position tracking
     )
     
     if not result.success:

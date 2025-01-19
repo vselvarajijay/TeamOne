@@ -1,0 +1,554 @@
+[
+    {
+        "left_shoulder_yaw": {
+          "id": 11,
+          "position": -1.93,
+          "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+          "id": 12,
+          "position": 90.62,
+          "torque": 0.37
+        },
+        "left_elbow_yaw": {
+          "id": 13,
+          "position": 18.54,
+          "torque": 0.0
+        },
+        "left_gripper": {
+          "id": 14,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+          "id": 21,
+          "position": 0.53,
+          "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+          "id": 22,
+          "position": -90.26,
+          "torque": 0.0
+        },
+        "right_elbow_yaw": {
+          "id": 23,
+          "position": -4.22,
+          "torque": 0.0
+        },
+        "right_gripper": {
+          "id": 24,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "left_hip_yaw": {
+          "id": 31,
+          "position": 3.52,
+          "torque": 0.0
+        },
+        "left_hip_roll": {
+          "id": 32,
+          "position": 3.78,
+          "torque": 0.0
+        },
+        "left_hip_pitch": {
+          "id": 33,
+          "position": -9.14,
+          "torque": 0.0
+        },
+        "left_knee_pitch": {
+          "id": 34,
+          "position": 4.48,
+          "torque": 0.0
+        },
+        "left_ankle_pitch": {
+          "id": 35,
+          "position": -25.58,
+          "torque": 0.0
+        },
+        "right_hip_yaw": {
+          "id": 41,
+          "position": -1.23,
+          "torque": 0.0
+        },
+        "right_hip_roll": {
+          "id": 42,
+          "position": -4.22,
+          "torque": 0.0
+        },
+        "right_hip_pitch": {
+          "id": 43,
+          "position": 7.38,
+          "torque": 0.0
+        },
+        "right_knee_pitch": {
+          "id": 44,
+          "position": -19.78,
+          "torque": 0.0
+        },
+        "right_ankle_pitch": {
+          "id": 45,
+          "position": 10.9,
+          "torque": 0.0
+        }
+      },
+      {
+        "left_shoulder_yaw": {
+          "id": 11,
+          "position": 1.32,
+          "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+          "id": 12,
+          "position": 83.23,
+          "torque": 0.0
+        },
+        "left_elbow_yaw": {
+          "id": 13,
+          "position": 62.75,
+          "torque": 10.61
+        },
+        "left_gripper": {
+          "id": 14,
+          "position": -1.58,
+          "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+          "id": 21,
+          "position": 13.8,
+          "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+          "id": 22,
+          "position": -85.61,
+          "torque": 0.0
+        },
+        "right_elbow_yaw": {
+          "id": 23,
+          "position": -59.15,
+          "torque": 0.0
+        },
+        "right_gripper": {
+          "id": 24,
+          "position": -0.26,
+          "torque": 0.0
+        },
+        "left_hip_yaw": {
+          "id": 31,
+          "position": 5.1,
+          "torque": 10.67
+        },
+        "left_hip_roll": {
+          "id": 32,
+          "position": 26.54,
+          "torque": 0.0
+        },
+        "left_hip_pitch": {
+          "id": 33,
+          "position": 0.62,
+          "torque": 0.23
+        },
+        "left_knee_pitch": {
+          "id": 34,
+          "position": -12.66,
+          "torque": 0.0
+        },
+        "left_ankle_pitch": {
+          "id": 35,
+          "position": -26.54,
+          "torque": 0.0
+        },
+        "right_hip_yaw": {
+          "id": 41,
+          "position": 4.31,
+          "torque": 0.0
+        },
+        "right_hip_roll": {
+          "id": 42,
+          "position": -30.94,
+          "torque": 0.0
+        },
+        "right_hip_pitch": {
+          "id": 43,
+          "position": 12.22,
+          "torque": 0.38
+        },
+        "right_knee_pitch": {
+          "id": 44,
+          "position": -0.18,
+          "torque": 0.0
+        },
+        "right_ankle_pitch": {
+          "id": 45,
+          "position": 6.68,
+          "torque": 10.49
+        }
+      },
+      {
+        "left_shoulder_yaw": {
+          "id": 11,
+          "position": -1.93,
+          "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+          "id": 12,
+          "position": 90.62,
+          "torque": 0.37
+        },
+        "left_elbow_yaw": {
+          "id": 13,
+          "position": 18.54,
+          "torque": 0.0
+        },
+        "left_gripper": {
+          "id": 14,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+          "id": 21,
+          "position": 0.53,
+          "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+          "id": 22,
+          "position": -90.26,
+          "torque": 0.0
+        },
+        "right_elbow_yaw": {
+          "id": 23,
+          "position": -4.22,
+          "torque": 0.0
+        },
+        "right_gripper": {
+          "id": 24,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "left_hip_yaw": {
+          "id": 31,
+          "position": 3.52,
+          "torque": 0.0
+        },
+        "left_hip_roll": {
+          "id": 32,
+          "position": 3.78,
+          "torque": 0.0
+        },
+        "left_hip_pitch": {
+          "id": 33,
+          "position": -9.14,
+          "torque": 0.0
+        },
+        "left_knee_pitch": {
+          "id": 34,
+          "position": 4.48,
+          "torque": 0.0
+        },
+        "left_ankle_pitch": {
+          "id": 35,
+          "position": -25.58,
+          "torque": 0.0
+        },
+        "right_hip_yaw": {
+          "id": 41,
+          "position": -1.23,
+          "torque": 0.0
+        },
+        "right_hip_roll": {
+          "id": 42,
+          "position": -4.22,
+          "torque": 0.0
+        },
+        "right_hip_pitch": {
+          "id": 43,
+          "position": 7.38,
+          "torque": 0.0
+        },
+        "right_knee_pitch": {
+          "id": 44,
+          "position": -19.78,
+          "torque": 0.0
+        },
+        "right_ankle_pitch": {
+          "id": 45,
+          "position": 10.9,
+          "torque": 0.0
+        }
+      },
+      {
+        "left_shoulder_yaw": {
+          "id": 11,
+          "position": 2.29,
+          "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+          "id": 12,
+          "position": 60.12,
+          "torque": 0.0
+        },
+        "left_elbow_yaw": {
+          "id": 13,
+          "position": 2.29,
+          "torque": 0.0
+        },
+        "left_gripper": {
+          "id": 14,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+          "id": 21,
+          "position": -2.64,
+          "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+          "id": 22,
+          "position": -59.33,
+          "torque": 0.0
+        },
+        "right_elbow_yaw": {
+          "id": 23,
+          "position": -6.68,
+          "torque": 0.0
+        },
+        "right_gripper": {
+          "id": 24,
+          "position": 0.0,
+          "torque": 0.0
+        },
+        "left_hip_yaw": {
+          "id": 31,
+          "position": 8.35,
+          "torque": 0.0
+        },
+        "left_hip_roll": {
+          "id": 32,
+          "position": 4.22,
+          "torque": 0.0
+        },
+        "left_hip_pitch": {
+          "id": 33,
+          "position": -90.88,
+          "torque": 0.0
+        },
+        "left_knee_pitch": {
+          "id": 34,
+          "position": 159.52,
+          "torque": 0.0
+        },
+        "left_ankle_pitch": {
+          "id": 35,
+          "position": 96.06,
+          "torque": 0.0
+        },
+        "right_hip_yaw": {
+          "id": 41,
+          "position": 2.72,
+          "torque": 0.0
+        },
+        "right_hip_roll": {
+          "id": 42,
+          "position": -2.2,
+          "torque": 0.0
+        },
+        "right_hip_pitch": {
+          "id": 43,
+          "position": 89.82,
+          "torque": 0.0
+        },
+        "right_knee_pitch": {
+          "id": 44,
+          "position": -162.16,
+          "torque": 0.0
+        },
+        "right_ankle_pitch": {
+          "id": 45,
+          "position": -94.48,
+          "torque": 0.0
+        }
+      },
+      {
+        "left_shoulder_yaw": {
+            "id": 11,
+            "position": -0.62,
+            "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+            "id": 12,
+            "position": -3.69,
+            "torque": 0.0
+        },
+        "left_elbow_yaw": {
+            "id": 13,
+            "position": -0.18,
+            "torque": 0.0
+        },
+        "left_gripper": {
+            "id": 14,
+            "position": 0.0,
+            "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+            "id": 21,
+            "position": -6.86,
+            "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+            "id": 22,
+            "position": 1.85,
+            "torque": 0.0
+        },
+        "right_elbow_yaw": {
+            "id": 23,
+            "position": 9.05,
+            "torque": 0.0
+        },
+        "right_gripper": {
+            "id": 24,
+            "position": 0.0,
+            "torque": 0.0
+        },
+        "left_hip_yaw": {
+            "id": 31,
+            "position": -5.45,
+            "torque": 0.0
+        },
+        "left_hip_roll": {
+            "id": 32,
+            "position": 7.21,
+            "torque": 0.0
+        },
+        "left_hip_pitch": {
+            "id": 33,
+            "position": -15.82,
+            "torque": 0.0
+        },
+        "left_knee_pitch": {
+            "id": 34,
+            "position": 27.86,
+            "torque": 0.0
+        },
+        "left_ankle_pitch": {
+            "id": 35,
+            "position": 10.55,
+            "torque": 0.0
+        },
+        "right_hip_yaw": {
+            "id": 41,
+            "position": 2.99,
+            "torque": 0.0
+        },
+        "right_hip_roll": {
+            "id": 42,
+            "position": 1.85,
+            "torque": 0.0
+        },
+        "right_hip_pitch": {
+            "id": 43,
+            "position": 14.94,
+            "torque": 0.0
+        },
+        "right_knee_pitch": {
+            "id": 44,
+            "position": -21.53,
+            "torque": 0.0
+        },
+        "right_ankle_pitch": {
+            "id": 45,
+            "position": -7.29,
+            "torque": 0.0
+        }
+    },
+    {
+        "left_shoulder_yaw": {
+            "id": 11,
+            "position": -0.62,
+            "torque": 0.0
+        },
+        "left_shoulder_pitch": {
+            "id": 12,
+            "position": -3.69,
+            "torque": 0.0
+        },
+        "left_elbow_yaw": {
+            "id": 13,
+            "position": -0.18,
+            "torque": 0.0
+        },
+        "left_gripper": {
+            "id": 14,
+            "position": 0.0,
+            "torque": 0.0
+        },
+        "right_shoulder_yaw": {
+            "id": 21,
+            "position": -6.86,
+            "torque": 0.0
+        },
+        "right_shoulder_pitch": {
+            "id": 22,
+            "position": 1.85,
+            "torque": 0.0
+        },
+        "right_elbow_yaw": {
+            "id": 23,
+            "position": 9.05,
+            "torque": 0.0
+        },
+        "right_gripper": {
+            "id": 24,
+            "position": 0.0,
+            "torque": 0.0
+        },
+        "left_hip_yaw": {
+            "id": 31,
+            "position": -5.45,
+            "torque": 0.0
+        },
+        "left_hip_roll": {
+            "id": 32,
+            "position": 7.21,
+            "torque": 0.0
+        },
+        "left_hip_pitch": {
+            "id": 33,
+            "position": -15.82,
+            "torque": 0.0
+        },
+        "left_knee_pitch": {
+            "id": 34,
+            "position": 27.86,
+            "torque": 0.0
+        },
+        "left_ankle_pitch": {
+            "id": 35,
+            "position": 10.55,
+            "torque": 0.0
+        },
+        "right_hip_yaw": {
+            "id": 41,
+            "position": 2.99,
+            "torque": 0.0
+        },
+        "right_hip_roll": {
+            "id": 42,
+            "position": 1.85,
+            "torque": 0.0
+        },
+        "right_hip_pitch": {
+            "id": 43,
+            "position": 14.94,
+            "torque": 0.0
+        },
+        "right_knee_pitch": {
+            "id": 44,
+            "position": -21.53,
+            "torque": 0.0
+        },
+        "right_ankle_pitch": {
+            "id": 45,
+            "position": -7.29,
+            "torque": 0.0
+        }
+    }
+]
