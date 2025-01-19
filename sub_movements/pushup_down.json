@@ -1,92 +1,92 @@
 {
   "left_shoulder_yaw": {
     "id": 11,
-    "position": 1.32,
+    "position": -2.29,
     "torque": 0.0
   },
   "left_shoulder_pitch": {
     "id": 12,
-    "position": 83.23,
+    "position": 110.65,
     "torque": 0.0
   },
   "left_elbow_yaw": {
     "id": 13,
-    "position": 62.75,
-    "torque": 10.61
+    "position": 52.73,
+    "torque": 0.0
   },
   "left_gripper": {
     "id": 14,
-    "position": -1.58,
+    "position": 0.18,
     "torque": 0.0
   },
   "right_shoulder_yaw": {
     "id": 21,
-    "position": 13.8,
+    "position": -1.67,
     "torque": 0.0
   },
   "right_shoulder_pitch": {
     "id": 22,
-    "position": -85.61,
+    "position": -110.62,
     "torque": 0.0
   },
   "right_elbow_yaw": {
     "id": 23,
-    "position": -59.15,
+    "position": -52,
     "torque": 0.0
   },
   "right_gripper": {
     "id": 24,
-    "position": -0.26,
+    "position": 0.0,
     "torque": 0.0
   },
   "left_hip_yaw": {
     "id": 31,
-    "position": 5.1,
-    "torque": 10.67
+    "position": 5.27,
+    "torque": 0.0
   },
   "left_hip_roll": {
     "id": 32,
-    "position": 26.54,
+    "position": 25.31,
     "torque": 0.0
   },
   "left_hip_pitch": {
     "id": 33,
-    "position": 0.62,
-    "torque": 0.23
+    "position": -23.91,
+    "torque": 0.0
   },
   "left_knee_pitch": {
     "id": 34,
-    "position": -12.66,
+    "position": 20.21,
     "torque": 0.0
   },
   "left_ankle_pitch": {
     "id": 35,
-    "position": -26.54,
+    "position": -7.03,
     "torque": 0.0
   },
   "right_hip_yaw": {
     "id": 41,
-    "position": 4.31,
+    "position": 2.99,
     "torque": 0.0
   },
   "right_hip_roll": {
     "id": 42,
-    "position": -30.94,
-    "torque": 0.0
+    "position": -32.52,
+    "torque": 10.63
   },
   "right_hip_pitch": {
     "id": 43,
-    "position": 12.22,
-    "torque": 0.38
+    "position": 17.75,
+    "torque": 0.0
   },
   "right_knee_pitch": {
     "id": 44,
-    "position": -0.18,
+    "position": -3.43,
     "torque": 0.0
   },
   "right_ankle_pitch": {
     "id": 45,
-    "position": 6.68,
-    "torque": 10.49
+    "position": -7.21,
+    "torque": 0.0
   }
 }

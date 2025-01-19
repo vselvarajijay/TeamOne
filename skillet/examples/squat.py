@@ -96,7 +96,7 @@ def main() -> None:
     
     try:
         # Load squat positions
-        with open("squatv3.json", "r") as f:
+        with open("pushup.json", "r") as f:
             squat_sequence = json.load(f)
             
         kos = pykos.KOS(ip="192.168.42.1")
