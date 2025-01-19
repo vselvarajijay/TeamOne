@@ -38,9 +38,10 @@ def move_to_position(kos: pykos.KOS, position_dict: dict) -> list[str]:
     """Move all joints to specified positions and return list of failed joints."""
     failed_joints = []
     
-    for joint_name, target_position in position_dict.items():
+    for joint_name, joint_data in position_dict.items():
         try:
-            actuator_id = ACTUATOR_NAME_TO_ID[joint_name]
+            actuator_id = joint_data["id"]
+            target_position = joint_data["position"]
             
             # Configure actuator first
             if not configure_actuator(kos, actuator_id):
