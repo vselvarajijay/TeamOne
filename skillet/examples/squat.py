@@ -26,7 +26,7 @@ def configure_actuator(kos: pykos.KOS, actuator_id: int) -> bool:
             kp=32.0,  # Proportional gain
             kd=32.0,  # Derivative gain
             ki=32.0,  # Integral gain
-            max_torque=100.0,  # Maximum torque limit
+            max_torque=20.0,  # Maximum torque limit
             torque_enabled=True,
         )
         return result.success
@@ -42,7 +42,7 @@ def move_to_position(kos: pykos.KOS, position_dict: dict) -> list[str]:
         try:
             actuator_id = joint_data["id"]
             target_position = joint_data["position"]
-            
+
             # Configure actuator first
             if not configure_actuator(kos, actuator_id):
                 failed_joints.append(joint_name)
@@ -97,6 +97,7 @@ def main() -> None:
             if i < len(squat_sequence) - 1:  # Don't wait after last position
                 logger.info("Waiting 2 seconds before next position...")
                 time.sleep(2)
+            break
                 
     except FileNotFoundError:
         logger.error("squat_positions.json not found!")

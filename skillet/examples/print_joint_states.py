@@ -56,28 +56,6 @@ def print_all_joint_states() -> None:
     # Small delay to allow configurations to take effect
     time.sleep(0.5)
 
-    # Get and store state for each joint
-    for joint_name, actuator_id in ACTUATOR_NAME_TO_ID.items():
-        move_joint_a_little.configure_joint(kos, joint_name)
-        try:
-            state = kos.actuator.get_actuators_state([actuator_id])
-            if state and state.states:
-                joint_states[joint_name] = {
-                    "id": actuator_id,
-                    "position": round(state.states[0].position, 2),
-                    "torque": round(state.states[0].torque, 2)
-                }
-            else:
-                joint_states[joint_name] = {
-                    "id": actuator_id,
-                    "error": "No state data received"
-                }
-        except Exception as e:
-            joint_states[joint_name] = {
-                "id": actuator_id,
-                "error": str(e)
-            }
-
     # Print the JSON output
     logger.info("Joint States:")
     print(json.dumps(joint_states, indent=2))

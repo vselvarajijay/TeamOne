@@ -26,7 +26,7 @@ def configure_actuator(kos: pykos.KOS, actuator_id: int) -> bool:
             kd=32.0,  # Derivative gain
             ki=32.0,  # Integral gain
             max_torque=100.0,  # Maximum torque limit
-            torque_enabled=True,
+            torque_enabled=False,
         )
         return result.success
     except Exception as e:
