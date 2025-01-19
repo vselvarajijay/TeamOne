@@ -93,7 +93,6 @@ def main() -> None:
     """
     logging.basicConfig(level=logging.INFO)
     colorlogging.configure()
-    
     try:
         # Load squat positions
         with open("burpee.json", "r") as f:
@@ -101,6 +100,23 @@ def main() -> None:
             
         kos = pykos.KOS(ip="192.168.42.1")
         
+        # Play audio file properly
+        # with open("some_file.wav", "rb") as audio_file:
+        #     def audio_chunks():
+        #         while chunk := audio_file.read(4096):  # Read in 4KB chunks
+        #             yield chunk
+            
+        #     # Configure audio parameters for WAV playback
+        #     audio_config = {
+        #         "sample_rate": 44100,  # Standard WAV sample rate
+        #         "bit_depth": 16,       # Standard WAV bit depth
+        #         "channels": 2          # Stereo
+        #     }
+            
+        #     response = kos.sound.play_audio(audio_chunks(), **audio_config)
+        #     if not response.success:
+        #         logger.error(f"Failed to play audio: {response.error}")
+
         # Execute each position in sequence
         for i, position in enumerate(squat_sequence):
             logger.info(f"\nMoving to position {i+1}/{len(squat_sequence)}")
@@ -118,7 +134,7 @@ def main() -> None:
             if i < len(squat_sequence) - 1:  # Don't wait after last position
                 logger.info("Waiting 2 seconds before next position...")
                 time.sleep(2)
-                
+
     except FileNotFoundError:
         logger.error("squat_positions.json not found!")
     except json.JSONDecodeError:
